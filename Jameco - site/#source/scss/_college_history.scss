@@ -1,0 +1,73 @@
+.college_history {
+	padding: 150px 0;
+}
+.college_history__container {
+}
+.college_history__list {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 260px 0;
+
+	@media (max-width: $md2){
+		grid-gap: 150px 0;
+	}
+	
+	@media (max-width: $md3){
+		grid-gap: 100px 0;
+	}
+}
+.college_history__item {
+	display: flex;
+	justify-content: space-between;
+}
+.college_history__content {
+	flex: 0 0 40%;
+
+	@media (max-width: $md4){
+		text-align: center;
+	}
+}
+.college_history-title {
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 35 / 26 *100%;
+	margin: 0 0 60px 0;
+
+	@media (max-width: $md3){
+		margin: 0 0 50px 0;
+	}
+
+	@media (max-width: $md4){
+		margin: 0 0 40px 0;
+	}
+}
+.college_history-text {
+	line-height: 26 / 16 * 100%;
+}
+.college_history__logo {
+	flex: 1 1 460px;
+
+	@media (max-width: $md2){
+		flex: 1 1 350px;
+	}
+
+	@media (max-width: $md3){
+		flex: unset;
+	}
+
+	img{
+		height: 302px;
+		object-fit: cover;
+		width: 100%;
+
+		@media (max-width: $md2){
+			height: 350px;
+			margin: 0 0 40px 0;
+		}
+
+		@media (max-width: $md3){
+			height: 400px;
+			margin: 0 0 40px 0;
+		}
+	}
+}

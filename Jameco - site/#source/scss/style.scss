@@ -1,0 +1,85 @@
+@import "_normalize";
+
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:,300,regular,600,700,800,900);
+
+
+$white: #fff;
+$black: #000;
+$primary: #007074;
+$dark-primary: #04494F;
+
+$maxWidthContainer: 1160px ;
+$md1:$maxWidthContainer+ 20;
+$md2: 991.98px;
+$md3: 767.98px;
+$md6: 670px;
+$md4: 569.98px;
+$md5: 479.98px;
+
+//=============================================================================================================
+._container{
+	max-width: $md1;
+	margin: 0 auto;
+	padding: 0 20px 
+}
+//=============================================================================================================
+.main_text{
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.main_btn{
+	color: $primary;
+	border: 2px solid $primary;
+	transition: all .4s ease 0s;
+	background-color: $white;
+
+	&:hover{
+		background-color: $primary;
+		color: $white;
+	}
+}
+
+
+//=============================================================================================================
+.page {
+	&_intro-bg {
+		height: 250px;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		width: 100%;
+		border-radius: 5px;
+		z-index: 1;
+	}
+}
+.page_intro-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 41 / 30 *100%;
+	color: $primary;
+	background-color: $white;
+	display: inline-block;
+	padding: 10px 15px;
+	margin: 50px 0px;
+}
+//=============================================================================================================
+
+
+//=============================================================================================================
+
+@import "_header";
+
+@import "_index";
+
+@import "_college";
+
+@import "_college_history";
+
+@import "_speciallity";
+
+@import "_404_error";
+
+@import "_footer";
+
+
