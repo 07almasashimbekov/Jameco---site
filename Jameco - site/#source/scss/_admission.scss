@@ -1,0 +1,134 @@
+.admission {
+
+	// .admission__intro
+
+	&__intro {
+
+		// .admission__intro_img
+
+		&_img {
+			position: relative;
+
+
+			.admission__intro{
+				position: absolute;
+				bottom: 50px;
+				background-color: $white;
+				left: 50px;
+				padding: 10px 20px;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 25 / 18 * 100%;
+				color: $primary;
+				width: 520px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+	}
+}
+
+.admission {
+
+	// .admission_content
+
+	&_content {
+	}
+}
+
+
+.admission_content {
+	margin:160px 0 100px 0;
+	// .admission_content__container
+
+	&__container {
+		
+	}
+
+	// .admission_content__title
+
+	&__title {
+		display: flex;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 41 / 30 * 100%;
+		letter-spacing: 0.04em;
+		color: #007074;
+		margin: 0 0 40px 0;
+	}
+
+	// .admission_content__text
+
+	&__text {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+
+.access_conditions {
+}
+.access_conditions__container {
+	padding: 0 0 40px 0;
+}
+.access_conditions__title {
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 41 / 30 * 100%;
+	letter-spacing: 0.04em;
+	color: #007074;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 70px 0;
+}
+.access_conditions__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.access_conditions__item {
+	width: 360px;
+	height: 560px;
+	background: linear-gradient(152.6deg, #04494F 32.71%, #03A1A7 99.13%);
+}
+.access_conditions_img {
+	display: flex;
+	justify-content: center;
+	flex: 0 0 300px;
+	margin:  20px 0 56px 0;
+
+	img{
+		height: 336px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+}
+.access_conditions__item-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 22 / 30 * 100%;
+	display: flex;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	margin: 0 0 33px 0;
+	justify-content: center;
+}
+.access_conditions_button {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+	border: 1px solid $white;
+	background-color: transparent;
+	margin: 0 auto;
+	text-align: center;
+	display: table;
+	padding: 12px 56px;
+}
+
+

@@ -1,0 +1,59 @@
+.for {
+	// .for_parents
+
+	&_parents {
+	}
+}
+.for_parents {
+
+	// .for_parents__container
+
+	&__container {
+		padding: 100px 20px;
+	}
+
+	// .for_parents__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 100px 0;
+
+		@media (max-width: $md3){
+			grid-gap: 70px 0;
+		}
+
+		@media (max-width: $md4){
+			grid-gap: 50px 0;
+		}
+	}
+
+	// .for_parents__item
+
+	&__item {
+		@media (max-width: $md4){
+			text-align: center;
+		}
+	}
+
+	// .for_parents__title
+
+	&__title {
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 35px;
+		color: $primary;
+		margin: 0 0 40px 0;
+	}
+
+	// .for_parents__text
+
+	&__text {
+		letter-spacing: 0.02em;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 30 / 18 * 100%;
+		letter-spacing: 0.02em;
+		color: rgba(0, 0, 0, 0.8);
+	}
+}
